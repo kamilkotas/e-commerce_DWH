@@ -1,0 +1,22 @@
+CREATE TABLE IF NOT EXISTS bl_dm.DIM_SHOPS (
+					shops_surr_id		BIGINT NOT NULL UNIQUE,
+					shops_src_id		VARCHAR(255) NOT NULL,
+					source_system		VARCHAR(255) NOT NULL,
+					source_entity		VARCHAR(255) NOT NULL,
+					shop_name			VARCHAR(255) NOT NULL,
+					shop_phone			VARCHAR(255) NOT NULL,
+					shop_email			VARCHAR(255) NOT NULL,
+					shop_country_id		VARCHAR(255) NOT NULL,
+					shop_country_name	VARCHAR(255) NOT NULL,
+					shop_city_id		VARCHAR(255) NOT NULL,
+					shop_city_name		VARCHAR(255) NOT NULL,
+					shop_postal_code_id	VARCHAR(255) NOT NULL,
+					shop_postal_code	VARCHAR(255) NOT NULL,
+					shop_street_id		VARCHAR(255) NOT NULL,
+					shop_street_name	VARCHAR(255) NOT NULL,
+					shop_address_id		VARCHAR(255) NOT NULL,
+					shop_apartment		VARCHAR(255) NOT NULL,
+					shop_address_number	VARCHAR(255) NOT NULL,
+					update_dt			DATE NOT NULL,
+					insert_dt			DATE NOT NULL
+);

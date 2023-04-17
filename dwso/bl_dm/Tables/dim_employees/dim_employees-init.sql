@@ -1,0 +1,48 @@
+INSERT INTO bl_dm.dim_employees
+	(employees_surr_id,
+	employees_src_id,
+	source_system,
+	source_entity,
+	employee_address_id,
+	employee_name,
+	employee_surname,
+	employee_phone,
+	employee_email,
+	employee_country_id,
+	employee_country_name,
+	employee_city_id,
+	employee_city_name,
+	employee_postal_code_id,
+	employee_postal_code,
+	employee_street_id,
+	employee_street_name,
+	employee_apartment,
+	employee_address_number,
+	update_dt,
+	insert_dt)
+
+	VALUES(-1,
+			'-1',
+			'N/A',
+			'N/A',
+			'-1',
+			'N/A',
+			'N/A',
+			'N/A', 
+			'N/A', 
+			'-1',
+			'N/A', 
+			'-1',
+			'N/A',
+			'-1',
+			'N/A',
+			'-1',
+			'N/A',
+			'N/A',
+			'N/A',
+			'18000101'::DATE,
+			'99990101'::DATE)
+
+ON CONFLICT DO NOTHING;
+
+COMMIT;

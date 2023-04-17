@@ -1,0 +1,46 @@
+INSERT INTO bl_dm.dim_shops
+	(shops_surr_id,
+	shops_src_id,
+	source_system,
+	source_entity,
+	shop_name,
+	shop_phone,
+	shop_email,
+	shop_country_id,
+	shop_country_name,
+	shop_city_id,
+	shop_city_name,
+	shop_postal_code_id,
+	shop_postal_code,
+	shop_street_id,
+	shop_street_name,
+	shop_address_id,
+	shop_apartment,
+	shop_address_number,
+	update_dt,
+	insert_dt)
+
+	VALUES(-1,
+			'-1',
+			'N/A',
+			'N/A',
+			'N/A',
+			'N/A',
+			'N/A',
+			'-1',
+			'N/A',
+			'-1',
+			'N/A',
+			'-1',
+			'N/A',
+			'-1',
+			'N/A',
+			'-1',
+			'N/A',
+			'N/A',
+			'18000101'::DATE,
+			'99990101'::DATE)
+
+ON CONFLICT DO NOTHING;
+
+COMMIT;
